@@ -11,7 +11,7 @@
 
 .products li{
     flex: 1 1 29rem;
-    header: 47rem;
+    height: 47rem;
     padding: 1rem;
     margin: 1rem;
 }
