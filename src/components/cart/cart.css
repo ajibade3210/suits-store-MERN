@@ -21,7 +21,6 @@
 
 .cart-items li {
     display: flex;
-    flex-direction: column;
 }
 
 .cart-items li div {
