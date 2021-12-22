@@ -5,7 +5,7 @@ import './product.css';
 import Modal from "react-modal";
 import { Zoom } from 'react-reveal';
 import {connect} from "react-redux";
-import {fetchProducts} from "../../store/actions/productActions"
+import {fetchProducts} from "../../redux-store/actions/productActions"
 
 class Products extends Component {
     constructor(props){
@@ -93,6 +93,6 @@ class Products extends Component {
     }
 }
 
-export default connect((state) => ({products: state.products.items}), {
+export default connect((state) => ({products: state.products.filteredItems}), {
     fetchProducts,
 })(Products);
